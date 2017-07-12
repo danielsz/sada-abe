@@ -1,0 +1,11 @@
+* Sada Abe
+
+** A library for throttling functions
+
+Various implementations of throttling. 
+
+The implementation of the token bucket algorithm is similar to Bruno Vecchi’s [[https://github.com/brunoV/throttler][throttler]] library. It shows the same performance characteristics, and the same problems. It is API compatible, the signature of the entry points are the same. ~throttle-fn~. 
+
+The main problem [[https://github.com/brunoV/throttler/issues/6][observed]] is that the desired latency is achieved only after three iterations. This seems to be a limitation with ~core.async~, but I’m not 100% sure. This problem may or may not matter to you. 
+ 
+There is also a contant rate throttler that doesn’t suffer from this. It will be found in the namespaces ~sada-abe.constant-rate~ and ~sada-abe.constant-rate-alt~. 

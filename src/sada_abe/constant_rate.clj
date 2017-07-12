@@ -1,4 +1,5 @@
 (ns sada-abe.constant-rate
+  (:require [sada-abe.core :refer [unit->ms]])
   (:import [java.util.concurrent DelayQueue Delayed TimeUnit]))
 
 (defprotocol DelayedElement
@@ -33,16 +34,14 @@
       (equal-fn? [_ o]
         (= id (get-id o))))))
 
-(defn fn-throttle [delay]
-  (let [queue (DelayQueue.)]
+(defn fn-throttle [rate unit]
+  (let [queue (DelayQueue.)
+        delay (/ (unit->ms unit) rate)]
     (fn [f]
       (fn [& args]
         (let [el (new-delayed-fn queue delay f args)]
           (.put queue el)
           (run (.take queue)))))))
 
-(defn throttle-fn [f delay]
-  ((fn-throttle delay) f))
-
-
-
+(defn throttle-fn [f rate unit]
+  ((fn-throttle rate unit) f))
