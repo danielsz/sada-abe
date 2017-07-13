@@ -1,5 +1,6 @@
 * Sada Abe
-[[sada-abe/resources/realmofsenses.jpg]]
+[[https://github.com/danielsz/sada-abe/blob/master/resources/realmofsenses.jpg?raw=true]]
+
 ** A library for throttling functions
 
 Various implementations for throttling.
