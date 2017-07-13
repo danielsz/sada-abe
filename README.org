@@ -1,5 +1,5 @@
 * Sada Abe
-[[resources/realmofsenses.jpg?raw=true]]
+[[resources/realmofsenses.jpg?raw=true | width=400]]
 
 ** A library for throttling functions
 
