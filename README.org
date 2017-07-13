@@ -1,8 +1,8 @@
 * Sada Abe
-
+[[sada-abe/resources/realmofsenses.jpg]]
 ** A library for throttling functions
 
-Various implementations of throttling. 
+Various implementations for throttling.
 
 The implementation of the token bucket algorithm is similar to Bruno Vecchi’s [[https://github.com/brunoV/throttler][throttler]] library. It shows the same performance characteristics, and the same problems. It is API compatible, the signature of the entry points are the same. ~throttle-fn~. 
 
