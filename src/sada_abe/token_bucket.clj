@@ -48,4 +48,3 @@
    (throttle-fn f rate unit 0))
   ([f rate unit burstiness]
    ((fn-throttle rate unit burstiness) f)))
-
