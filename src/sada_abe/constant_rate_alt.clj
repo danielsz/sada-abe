@@ -1,6 +1,6 @@
 (ns sada-abe.constant-rate-alt
   (:require [clojure.core.async :as a :refer [<!!]]
-            [sada-abe.core :refer [unit->ms]]))
+            [detijd.units :refer [unit->ms]]))
 
 (defn fn-throttle [rate unit]
   (let [delay (/ (unit->ms unit) rate)]

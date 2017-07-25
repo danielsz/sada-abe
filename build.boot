@@ -3,9 +3,9 @@
  :resource-paths #{"src"}
  :dependencies '[[org.clojure/clojure "1.8.0"]
                  [org.clojure/core.async "0.3.443"]
+                 [org.clojure/core.memoize "0.5.9"]
                  [org.clojure/tools.logging "0.3.1"]
-                 [ch.qos.logback/logback-classic "1.2.1"]])
-
+                 [org.danielsz/detijd "0.1.0-SNAPSHOT"]])
 
 (deftask dev
   "Run a restartable system in the Repl"

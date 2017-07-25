@@ -1,6 +1,6 @@
 (ns sada-abe.eric-normand
   (:require [clojure.core.async :as async :refer [<!!]]
-            [sada-abe.core :refer [unit->ms]]))
+            [detijd.units :refer [unit->ms]]))
 
 
 (defn fn-throttle [rate unit burst]

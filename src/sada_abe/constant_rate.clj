@@ -1,5 +1,5 @@
 (ns sada-abe.constant-rate
-  (:require [sada-abe.core :refer [unit->ms]])
+  (:require [detijd.units :refer [unit->ms]])
   (:import [java.util.concurrent DelayQueue Delayed TimeUnit]))
 
 (defprotocol DelayedElement

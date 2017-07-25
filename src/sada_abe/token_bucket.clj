@@ -1,6 +1,6 @@
 (ns sada-abe.token-bucket
   (:require [clojure.core.async :as a :refer [<! <!! >! >!! chan thread go go-loop put! timeout]]
-            [sada-abe.core :refer [unit->ms]]))
+            [detijd.units :refer [unit->ms]]))
 
 (defn bucket
   ([burstiness]
