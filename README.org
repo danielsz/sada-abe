@@ -1,6 +1,6 @@
 * Sada Abe
 
-#+HTML: <img src="resources/realmofsenses.jpg" width="240" height="180" style="float: right;"/> 
+#+HTML: <img src="resources/realmofsenses.jpg" width="240" height="180" align="right"/> 
 
 ** A library for throttling functions
 
